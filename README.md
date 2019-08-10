@@ -16,7 +16,7 @@ and passed to the class by the $template variable.
 @param string $from - Who is the email from.\
 @param string $subject - Email subject line.\
 @param string $template - Filename must exist in ./templates as an .html file.\
-@param JSON $data - Json data passed as key / values and used for string interpolation.\
+@param JSON $data - Json data passed as key / values and used for string interpolation.
 
 ## Returns
 @return class object with Result added from the send (true for success / false for failed).
