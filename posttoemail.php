@@ -58,7 +58,7 @@ class PostToEmail
     public function loadTemplate() 
     {
 
-        $processFile = file_get_contents($this->templatesFolder.DIRECTORY_SEPARATOR.$this->template);
+        $processFile = mb_convert_encoding(file_get_contents($this->templatesFolder.DIRECTORY_SEPARATOR.$this->template), "HTML-ENTITIES", "UTF-8" );
 
         $thedata = json_decode($this->data);
         
